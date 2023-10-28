@@ -3,6 +3,7 @@ import Navbar from './Sections/Navbar'
 import Hero from './Sections/Hero'
 import Services from './Sections/Services'
 import Videos from './Sections/Videos'
+import Share from './Sections/Share'
 
 const Homepage = () => {
   return (
@@ -11,6 +12,7 @@ const Homepage = () => {
         <Hero/>
         <Services/>
         <Videos/>
+        <Share/>
     </div>
   )
 }

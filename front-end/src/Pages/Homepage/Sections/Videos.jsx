@@ -27,7 +27,7 @@ const Videos = () => {
             </p>
         </div>
         <div className="vid1 w-[30%] text-center flex flex-col justify-center items-center">
-            <img src={manuel} className='w-[350px]'  alt="" />
+            <img src={marissa} className='w-[350px]'  alt="" />
             <h1>Manuel, Makeup Artist</h1>
             <p>Between glam looks and good vibes, it’s no surprise why  
                 <span className='text-[#2ba6cb]'> Manuel’s clients keep coming back.</span>
