@@ -5,7 +5,7 @@ import asSeenIn from '../../../assets/as-seen-in.png'
 const Share = () => {
   return (
     <div className='flex flex-col items-center justify-center my-10'>
-        <div className="share relative w-[60%] h-[200px] bg-[#fcf2f2] rounded-xl">
+        <div className="share relative w-[60%] bg-[#fcf2f2] rounded-xl">
             <div className="share-col content-start m-8">
                 <h1 className='share-btn font-black text-xl'>Better with friends!</h1>
                 <p className=' my-5 w-[50%] '>

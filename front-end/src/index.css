@@ -9,7 +9,8 @@
 }
 
 .hero-text,
-.share-btn {
+.share-btn,
+.browse-header {
     font-family: 'Space Grotesk', sans-serif;
 }
 
@@ -18,3 +19,15 @@
     flex-direction: row;
     flex-wrap: wrap;
 }
+
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+  }
+  
+  .accordion-content.open {
+    max-height: 400px; 
+    background: #dadada;
+  }
+  
