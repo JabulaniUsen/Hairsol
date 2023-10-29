@@ -7,11 +7,7 @@ import Share from './Sections/Share'
 import Footer from './Sections/Footer'
 import Browse from './Sections/Browse'
 
-import { library } from '@fortawesome/fontawesome-svg-core';
-import { fas } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-library.add(fas);
 
 const Homepage = () => {
   return (

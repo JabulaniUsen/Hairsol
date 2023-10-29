@@ -32,12 +32,12 @@ const Services = () => {
 
         <div className="flex items-center justify-center gap-4 flex-wrap">
         {data.map((item, index) => (
-                <div className="box flex flex-col items-center" key={index}>
-                    <div className="img">
-                        <img src={item.img} className='w-[200px]' alt={item.title} />
-                    </div>
-                    <h1 className='border-2 border-black w-[100%] text-center p-2'>{item.title}</h1>
-                </div>
+          <div className="box flex flex-col items-center" key={index}>
+            <div className="img">
+              <img src={item.img} className='w-[200px]' alt={item.title} />
+            </div>
+            <button className='border-2 border-black w-[100%] text-center p-2'>{item.title}</button>
+          </div>
         ))}
         </div>
     </div>
