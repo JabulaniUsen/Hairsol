@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import steptodown from '../../../assets/steptodown.png'
 import asSeenIn from '../../../assets/as-seen-in.png'
-import Modal from '../../../Components/Modal';
+import Sharemodal from '../../../Components/ShareModal';
 
 const Share = () => {
 
@@ -9,10 +9,10 @@ const Share = () => {
 
   return (
     <div className='flex flex-col items-center justify-center py-20'>
-        <div className="share relative lg:w-[60%] bg-[#fcf2f2] rounded-xl sm:w-[90%]">
+        <div className="share flex flex-col justify-center items-center relative lg:w-[60%] bg-[#fcf2f2] rounded-xl sm:w-[90%]">
             <div className="share-col content-start m-8">
                 <h1 className='share-btn font-black text-xl'>Better with friends!</h1>
-                <p className=' my-5 lg:w-[50%] md:w-80% '>
+                <p className=' my-5  w-80% lg:w-[50%]'>
                     Refer a friend and you'll both get 15% (up to $50)
                     off when you book with a new pro.
                 </p>
@@ -25,14 +25,13 @@ const Share = () => {
                         Share Now
                     </button>
             </div>
-            <img className='lg:absolute right-0 bottom-0 md:float-right' src={steptodown} alt="" />
+            <img className='float-right lg:absolute right-0 bottom-0' src={steptodown} alt="" />
         </div>
 
         <div className="partners w-[200%] m-auto">
             <img src={asSeenIn} alt="" />
         </div>
-        {openModal && <Modal closeModal={setOpenModal} />}
-        
+        {openModal && <Sharemodal closeModal={setOpenModal} />}
     </div>
   )
 }

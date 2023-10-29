@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import braids from '../../../assets/braids.png';
 import naturalHair from '../../../assets/natural-hair.png';
 import haircut from '../../../assets/haircut.png';
@@ -9,8 +9,12 @@ import weaves from '../../../assets/weaves.png';
 import eyelashes from '../../../assets/eye-lashes.png';
 import nails from '../../../assets/nails.png';
 import kids from '../../../assets/kids.png';
+import LoginModal from '../../../Components/LoginModal';
 
 const Services = () => {
+
+  const [openModal, setOpenModal] = useState(false);
+
   const data = [
     { img: braids, title: 'Braids' },
     { img: naturalHair, title: 'Natural Hair' },
@@ -40,8 +44,8 @@ const Services = () => {
           </div>
         ))}
         </div>
+        {openModal && <LoginModal closeModal={() => setOpenModal(false)} />}
     </div>
   );
 }
-
 export default Services;

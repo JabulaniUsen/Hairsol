@@ -1,8 +1,12 @@
-import React from 'react'
+import React, { useState } from 'react'
 import logo from '../../../assets/logo.png'
 import arrowdown from '../../../assets/arrowdown.png'
+import LoginModal from '../../../Components/LoginModal'
 
 const Navbar = () => {
+
+    const [openModal, setOpenModal] = useState(false);
+    
   return (
     <div className='nav flex justify-between items-center mx-16 '>
         <div className="logo">
@@ -19,10 +23,13 @@ const Navbar = () => {
                 </li>
             </div>
             <div className="account list-none flex row gap-x-4 items-center">
-                <li>Log In</li>
+                <li onClick={() => {
+                    setOpenModal(true)
+                }}>Log In</li>
                 <li className='rounded-xl bg-black text-white py-3 px-4'>Sign Up</li>
             </div>
         </div>
+        {openModal && <LoginModal closeModal={() => setOpenModal(false)} />}
     </div>
   )
 }

@@ -20,11 +20,11 @@ const Hero = () => {
         <div className="search flex row items-center gap-1 flex-wrap">
           <div className="flex row items-center relative">
             <FontAwesomeIcon icon="fa-solid fa-magnifying-glass" className='absolute left-2' />
-            <input type="text" className='py-1 px-2 pl-7 sm:border-2 rounded' placeholder='Service, Stylist or Salon' />
+            <input type="text" className='py-1 px-2 pl-7 lg:border-0 border-2 rounded' placeholder='Service, Stylist or Salon' />
           </div>
           <div className="flex row items-center relative">
             <FontAwesomeIcon icon="fa-solid fa-location-dot" className='absolute left-2' /> 
-            <input type="text" className='py-1 px-3 pl-7 sm:border-2 rounded' value='Mountain View, CA' />
+            <input type="text" className='py-1 px-3 pl-7 lg:border-0 border-2 rounded' value='Mountain View, CA' />
             <FontAwesomeIcon icon="fa-solid fa-magnifying-glass" style={{color: "#ffffff",}} className='p-2 bg-black rounded mx-[6px]'/>
           </div>
         </div>
