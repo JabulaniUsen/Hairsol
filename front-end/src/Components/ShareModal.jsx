@@ -8,7 +8,7 @@ library.add(fas);
 function Sharemodal({ closeModal }) {
   return (
     <div className='modal-bg absolute flex justify-center items-center'>
-      <div className='modal-container shadow-2xl z-30 rounded bg-white p-6'>
+      <div className='modal-container shadow-2xl z-30 bg-[#fbf7f3] p-6'>
         <button
           className='absolute right-8 top-6'
           onClick={() => closeModal(false)}
