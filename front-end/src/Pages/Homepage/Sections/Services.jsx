@@ -14,7 +14,6 @@ import LoginModal from '../../../Components/LoginModal';
 const Services = () => {
 
   const [openModal, setOpenModal] = useState(false);
-  // const [openLogin, setOpenLogin] = useState(false);
 
   const data = [
     { img: braids, title: 'Braids' },

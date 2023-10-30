@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import heroImg from '../../../assets/hero.png'
 import circleArrow from '../../../assets/circle-left.png'
 import { library } from '@fortawesome/fontawesome-svg-core';
@@ -9,6 +9,8 @@ library.add(fas);
 
 
 const Hero = () => {
+  
+
   return (
     <div className='relative'>
       <img className='w-[85%] bg-[#E6CCBD] mx-auto my-6' src={heroImg} alt="" />
