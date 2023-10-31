@@ -8,6 +8,7 @@ import Payment from './Sections/Payment'
 import Free from './Sections/Free'
 import Community from './Sections/Community'
 import Invest from './Sections/Invest'
+import Footer from './Sections/Footer'
 
 const LandingPage = () => {
   return (
@@ -21,6 +22,7 @@ const LandingPage = () => {
         <Free/>
         <Community/>
         <Invest/>
+        <Footer/>
     </div>
   )
 }
