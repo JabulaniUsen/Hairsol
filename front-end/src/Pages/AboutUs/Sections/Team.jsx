@@ -27,14 +27,14 @@ const Team = () => {
       <div className="team-header mt-24 flex lg:justify-between items-center flex-wrap">
         <div className="sideOne w-[550px]">
           <h1 className="text-3xl">Meet <span className='text-[#fb7902]'>Our Team</span></h1>
-          <p className='leading-7 mt-3'>
+          <p className='leading-7 mt-3 mb-2'>
             Allow me to introduce you to the talented individuals
-            who <br /> make Serene Beauty the extraordinary place it is.
+            who make Serene Beauty the extraordinary place it is.
           </p>
         </div>
 
         <div className="sideTwo">
-          <button className='py-3 px-8 text-sm text-white bg-slate-900 '>Explore All Team</button>
+          <button className='py-3 px-8 text-sm text-white bg-slate-900 hover:bg-slate-800 '>Explore All Team</button>
         </div>
       </div>
 

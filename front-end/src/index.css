@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;800&family=Space+Grotesk:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;800&family=Space+Grotesk:wght@400;500;600;700&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -10,7 +10,13 @@
 
 .hero-text,
 .share-btn,
-.browse-header {
+.browse-header,
+.sub-head,
+.call-header,
+.call-text,
+.gain-header,
+.l-hero-text,
+.omor {
     font-family: 'Space Grotesk', sans-serif;
 }
 
