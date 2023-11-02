@@ -118,13 +118,7 @@ function Price() {
                     <img src={pricing} className='w-[400px]' alt="" />
                 </div>
 
-                <div
-                    className="one text-left"
-                    initial="hidden"
-                    animate={inView ? "visible" : "hidden"}
-                    variants={fadeDown}
-                    transition={{ duration }}
-                >
+                <div className="one text-left">
                     <h1 className='gain-header text-2xl my-7 font-bold'>New Client Connection</h1>
                     <p className='gain-text w-[480px]'>
                         Expand your reach and attract new clients effortlessly.
@@ -158,7 +152,7 @@ function Price() {
 
 
             <div className='flex flex-row m-10 my-20 flex-wrap justify-between lg:justify-around gap-10 items-center'>
-                <divclassName="two flex flex-row items-center">
+                <div className="two flex flex-row items-center">
                     <img src={smart} className='w-[400px]' alt="" />
                 </div>
 
@@ -195,6 +189,7 @@ function Price() {
                 </div>
             </div>  
         </div>
+    </div>
   )
 }
 
