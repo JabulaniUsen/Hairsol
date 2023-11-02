@@ -1,0 +1,9 @@
+/* CSS for styling date input field placeholders using a class */
+.date-input::placeholder {
+    /* Your styles here */
+    color: #c4c4c4;
+    font-style: italic;
+    font-size: 14px;
+    /* Add any other desired styles */
+  }
+  
