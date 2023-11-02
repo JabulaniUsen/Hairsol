@@ -17,10 +17,10 @@ const Navbar = () => {
         <div className="unordered-list cursor-pointer flex row gap-x-12 items-center">
             <div className="list list-none flex row gap-x-10">
                 <Link>New Clients</Link>
-                <Link>Payments</Link>
+                <Link to='/payment'>Payments</Link>
                 <Link to='/pricing'>Pricing</Link>
-                <Link className='flex row items-center'>Resources 
-                    <img src={arrowdown} alt="" />
+                <Link to='/services' className='flex row items-center'>Services 
+                    {/* <img src={arrowdown} alt="" /> */}
                 </Link>
                 <Link to='/about'>About Us</Link>
             </div>

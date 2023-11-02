@@ -6,8 +6,6 @@ import chat from '../../../assets/chat.png'
 import smart from '../../../assets/smart.png'
 
 function Price() {
-
-    
   return (
     <div className='p-text flex flex-col justify-center items-center gap-5 mx-10 my-11'>
         <div className="p-header flex flex-col justify-center items-center gap-5">
@@ -72,7 +70,7 @@ function Price() {
                     <p>
                         Get started with essential tools for your business.
                     </p>
-                    <button className='bg-[#121111] p-2 px-4 rounded-lg text-white'>Start Free Trial</button>
+                    <button className='bg-[#121111] p-2 px-4 rounded-lg text-white'>Get Started</button>
 
                     <div className="features flex flex-col gap-5 my-8">
                         <div className="flex">

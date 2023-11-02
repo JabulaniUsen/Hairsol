@@ -1,15 +1,11 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import screenOne from '../../../assets/screen1.png';
 import screenTwo from '../../../assets/screen2.png';
 import screenThree from '../../../assets/screen3.png';
-import LoginModal from '../../../Components/LoginModal'
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 
 const Hero = () => {
-
-  const [openModal, setOpenModal] = useState(false);
-
   const fadeLeft = {
     hidden: { opacity: 0, x: -100 },
     visible: { opacity: 1, x: 0 },
@@ -64,10 +60,7 @@ const Hero = () => {
           of clients searching for <br />
           top beauty professionals
         </p>
-        <button onClick={() => {
-                    setOpenModal(true)
-                }} 
-                className='bg-[#121111] py-3 px-8 my-7 text-sm rounded-md text-white hover:bg-slate-800'>Get Started</button>
+        <button className='bg-[#121111] py-3 px-8 my-7 text-sm rounded-md text-white hover:bg-slate-800'>Get Started</button>
       </motion.div>
 
       <motion.div
@@ -82,7 +75,6 @@ const Hero = () => {
         <img src={screenTwo} className='z-[20] w-[130px] lg:w-[180px]' alt="" />
         <img src={screenThree} className='ml-[-45px] w-[150px] lg:w-[210px]' alt="" />
       </motion.div>
-      {openModal && <LoginModal closeModal={() => setOpenModal(false)} />}
     </div>
   );
 };
