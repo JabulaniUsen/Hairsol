@@ -7,27 +7,6 @@ import smart from '../../../assets/smart.png'
 
 function Price() {
 
-    const fadeUp = {
-        hidden: { opacity: 0, y: -100 },
-        visible: { opacity: 1, y: 0 },
-      };
-    
-      const fadeDown = {
-        hidden: { opacity: 0, y: 200 },
-        visible: { opacity: 1, y: 0 },
-      };
-      const duration = 0.5;
-    
-      const [ref, inView] = useInView({
-        triggerOnce: true,
-        threshold: 0.5, // Adjust this threshold value as needed
-      });
-    
-      useEffect(() => {
-        if (inView) {
-          // Trigger animation when the element is in view
-        }
-      }, [inView]);
     
   return (
     <div className='p-text flex flex-col justify-center items-center gap-5 mx-10 my-11'>
@@ -135,18 +114,11 @@ function Price() {
             </div>
 
             <div className='flex flex-row m-10 my-20 flex-wrap justify-between lg:justify-around gap-10 items-center'>
-                <motion.div
-                    className="two flex flex-row items-center"
-                    ref={ref}
-                    initial="hidden"
-                    animate={inView ? "visible" : "hidden"}
-                    variants={fadeUp}
-                    transition={{ duration }}
-                >
+                <div className="two flex flex-row items-center">
                     <img src={pricing} className='w-[400px]' alt="" />
-                </motion.div>
+                </div>
 
-                <motion.div
+                <div
                     className="one text-left"
                     initial="hidden"
                     animate={inView ? "visible" : "hidden"}
@@ -162,7 +134,7 @@ function Price() {
                     </p>
                     <p>30% one-time commission</p>
                     <button className='bg-[#121111] py-3 px-8 my-7 text-sm rounded-md text-white'>Learn More</button>
-                </motion.div>
+                </div>
             </div>  
 
             <div className='flex flex-row my-10 p-10 flex-wrap justify-between lg:justify-around items-center'>
@@ -186,24 +158,11 @@ function Price() {
 
 
             <div className='flex flex-row m-10 my-20 flex-wrap justify-between lg:justify-around gap-10 items-center'>
-                <motion.div
-                    className="two flex flex-row items-center"
-                    ref={ref}
-                    initial="hidden"
-                    animate={inView ? "visible" : "hidden"}
-                    variants={fadeUp}
-                    transition={{ duration }}
-                >
+                <divclassName="two flex flex-row items-center">
                     <img src={smart} className='w-[400px]' alt="" />
-                </motion.div>
+                </div>
 
-                <motion.div
-                    className="one text-left"
-                    initial="hidden"
-                    animate={inView ? "visible" : "hidden"}
-                    variants={fadeDown}
-                    transition={{ duration }}
-                >
+                <div className="one text-left">
                     <h1 className='gain-header text-2xl my-7 font-bold'>Smart Pricing</h1>
                     <p className='gain-text w-[480px]'>
                         Earn an extra $3K a year on average when you
@@ -214,17 +173,11 @@ function Price() {
                     </p>
                     <p>5.5% commision per Smart Priced appointment</p>
                     <button className='bg-[#121111] py-3 px-8 my-7 text-sm rounded-md text-white'>Get Started</button>
-                </motion.div>
+                </div>
             </div> 
 
             <div className='flex flex-row m-10 my-20 flex-wrap justify-left lg:justify-left gap-10 items-center'>
-                <motion.div
-                    className="one text-left"
-                    initial="hidden"
-                    animate={inView ? "visible" : "hidden"}
-                    variants={fadeDown}
-                    transition={{ duration }}
-                >
+                <div className="one text-left">
                     <h1 className='gain-header text-2xl my-7 font-bold'>Robust Payment System</h1>
                     <p className='gain-text w-[480px]'>
                         Flat fee per card transaction. Unlike other platforms,
@@ -239,10 +192,9 @@ function Price() {
                     </p>
                     <p>5.5% commision per Smart Priced appointment</p>
                     <button className='bg-[#121111] py-3 px-8 my-7 text-sm rounded-md text-white'>Get Started</button>
-                </motion.div>
+                </div>
             </div>  
         </div>
-    </div>
   )
 }
 
