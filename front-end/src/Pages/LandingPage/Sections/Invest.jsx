@@ -43,7 +43,7 @@ function Invest() {
           className='w-[400px] mt-3'
           
         >
-          Thinking about moving to a new location, upgrading your branding or equipment? Apply for personalized loans through StyleSeat and automatically pay them back with a percentage of your daily earnings.
+          Thinking about moving to a new location, upgrading your branding or equipment? Apply for personalized loans through Hairsol and automatically pay them back with a percentage of your daily earnings.
         </motion.p>
         <motion.button
           className='bg-[#121111] py-3 px-8 my-7 text-sm rounded-md text-white'

@@ -19,6 +19,7 @@ const Navbar = () => {
                 <Link>New Clients</Link>
                 <Link to='/payment'>Payments</Link>
                 <Link to='/pricing'>Pricing</Link>
+                <Link to='/booking'>Booking</Link>
                 <Link to='/services' className='flex row items-center'>Services 
                     {/* <img src={arrowdown} alt="" /> */}
                 </Link>

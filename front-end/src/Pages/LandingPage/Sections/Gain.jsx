@@ -48,7 +48,7 @@ function Gain() {
       >
         <h1 className='gain-header text-2xl my-7 font-bold'>Gain New Clients, Create Lasting <br />Connections</h1>
         <p className='gain-text w-[480px]'>
-          StyleSeat promotes your business by investing in TV
+          Hairsol promotes your business by investing in TV
           ads, Google Ads, digital and social media marketing,
           and more to connect you with quality clients and keep
           your calendar consistently booked. We ensure your

@@ -30,7 +30,7 @@ function LoginModal({ closeModal, setOpenModal }) {
                 </button>
         </div>
         <div className=""> 
-          <h1 className='text-lg font-bold text-center'>Sign Up for StyleSeat</h1>
+          <h1 className='text-lg font-bold text-center'>Sign Up for Hairsol</h1>
         </div>
         <hr />
         <div>
