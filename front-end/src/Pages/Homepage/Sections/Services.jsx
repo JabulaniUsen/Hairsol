@@ -10,7 +10,6 @@ import eyelashes from '../../../assets/eye-lashes.png';
 import nails from '../../../assets/nails.png';
 import kids from '../../../assets/kids.png';
 import LoginModal from '../../../Components/LoginModal';
-import CollectionSection from './Sections/collection';
 
 
 const Services = () => {
