@@ -12,7 +12,7 @@ import kids from '../../../assets/kids.png';
 import LoginModal from '../../../Components/LoginModal';
 
 
-const Services = () => {
+const Service = () => {
 
   const [openModal, setOpenModal] = useState(false);
 
@@ -50,4 +50,4 @@ const Services = () => {
     </div>
   );
 }
-export default Services;
+export default Service;
