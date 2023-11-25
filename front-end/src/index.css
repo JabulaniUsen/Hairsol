@@ -20,6 +20,9 @@
 .p-text {
     font-family: 'Space Grotesk', sans-serif;
 }
+.poppins {
+    font-family: 'Poppins' sans-serif;
+}
 .product-list,
 .montserrat{
     font-family: 'Montserrat', sans-serif;
@@ -86,4 +89,12 @@
   
 .option {
     background: #000;
+}
+
+.mainbg {
+    background-image: url(./assets/main.png);
+    background-position: center;
+    background-size: cover;
+    height: 105vh;
+    width: 100%;
 }

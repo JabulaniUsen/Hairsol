@@ -7,7 +7,7 @@ import Book from './Sections/Book'
 import Collection from './Sections/collection'
 import Featured from './Sections/Featured'
 import Stories from './Sections/Stories'
-import Footer from '../Homepage/Sections/Footer'
+import Footer from '../LandingPage/Sections/Footer'
 
 
 function Services() {
@@ -15,11 +15,11 @@ function Services() {
     <div>
         <Navbar/>
         <Hero/>
-        <Products/>
-        <Book/>
+        {/* <Products/> */}
+        {/* <Book/> */}
         <Collection/>
         <Featured/>
-        <Stories/>
+        {/* <Stories/> */}
         <Footer/>
     </div>
   )

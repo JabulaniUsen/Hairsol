@@ -10,7 +10,7 @@ library.add(fas);
 const Footer = () => {
   return (
     <div>
-        <div className="footer bg-[#121111] mt-20 flex justify-center flex-wrap flex-row ">
+        <div className="montserrat footer bg-[#121111] mt-20 flex justify-center flex-wrap flex-row ">
 
             <div className="col-1 basis-1/2 p-10 flex flex-col gap-7">
                 <div className="texts text-white">
@@ -27,14 +27,14 @@ const Footer = () => {
                     <img src={googlePlay} alt="" />
                 </div>
 
-                <small className='text-white'>© 2023 StyleSeat, Inc. All rights reserved.</small>
+                <small className='text-white'>© 2023 Hairsol, Inc. All rights reserved.</small>
             </div>
 
             <div className="col-2 basis-1/4 text-white p-10">
                 <div className="">
                     <h1 className='pb-1'>MEDIA</h1>
                     <ul className='font-light'>
-                        <li>StyleSeat Blog</li>
+                        <li>Hairsol Blog</li>
                         <li>Press</li>
                     </ul>
                 </div>
@@ -42,7 +42,7 @@ const Footer = () => {
                 <div className="">
                     <h1 >TALK TO US</h1>
                     <ul className='font-light'>
-                        <li>StyleSeat Help Center</li>
+                        <li>Hairsol Help Center</li>
                     </ul>
                 </div>
             </div>

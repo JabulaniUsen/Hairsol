@@ -14,12 +14,12 @@ function App() {
     <>
       <BrowserRouter>
         <Routes>
-          <Route index element={<LandingPage/>} />
-          <Route path="/homepage" element={<Homepage/>} />
+          <Route index element={<Services/>} />
+          <Route path="/newclient" element={<LandingPage/>} />
           <Route path="/about" element={<AboutUs/>} />
           <Route path="/pricing" element={<Pricing/>} />
           <Route path="/payment" element={<Payment/>} />
-          <Route path="/services" element={<Services/>}/>
+          {/* <Route path="/services" element={<Homepage/>}/> */}
           <Route path="/booking" element={<Booking/>} />
         </Routes>
       </BrowserRouter>

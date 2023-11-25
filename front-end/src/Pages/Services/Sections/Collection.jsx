@@ -12,7 +12,7 @@ function Collection() {
             <div className="sideOne w-[550px]">
                 <p className='product-header leading-10 mt-3 mb-2 text-3xl font-semibold'>
                     Enhance your inner radiance at our 
-                    <span className='text-[#fb7902]'>beauty sanctuary </span>and let your true beauty shine.
+                    <span className='text-[#737056]'>beauty sanctuary </span>and let your true beauty shine.
                 </p>
             </div>
 
@@ -27,7 +27,7 @@ function Collection() {
                     src={hair} 
                     alt="" />
                 <h1 className='text-2xl font-bold'>Hair Salon Haven</h1>
-                <small className='text-[#fb7902] font-bold'>Explore Now</small>
+                <small className='text-[#737056] font-bold'>Explore Now</small>
             </div>
 
             <div className=" flex flex-col w-[300px] gap-3">
@@ -36,7 +36,7 @@ function Collection() {
                     src={wax} 
                     alt="" />
                 <h1 className='text-2xl font-bold'>Waxing Salon Haven</h1>
-                <small className='text-[#fb7902] font-bold'>Explore Now</small>
+                <small className='text-[#737056] font-bold'>Explore Now</small>
             </div>
 
             <div className=" flex flex-col w-[300px] gap-3">
@@ -45,7 +45,7 @@ function Collection() {
                     src={skin} 
                     alt="" />
                 <h1 className='text-2xl font-bold'>Skincare Salon Haven</h1>
-                <small className='text-[#fb7902] font-bold'>Explore Now</small>
+                <small className='text-[#737056] font-bold'>Explore Now</small>
             </div>
         </div>
 

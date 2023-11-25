@@ -6,7 +6,7 @@ import salonVideo from '../../../assets/Salon Video.png'
 
 function Featured() {
   return (
-    <div>
+    <div className='mb-20'>
         <div className="team-header mt-24 flex lg:justify-around items-center  mx-24 lg:mx-10 flex-wrap">
             <div className="sideOne w-[550px]">
                 <p className='product-header leading-10 mt-3 mb-2 text-3xl font-semibold'>
