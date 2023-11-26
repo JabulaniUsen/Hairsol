@@ -6,7 +6,7 @@ function Free() {
     <div className='flex flex-row my-10 p-10 flex-wrap justify-between lg:justify-around items-center bg-[#f2f1f0]'>
       <div className="one ">
         <h1 className='l-hero-text text-2xl lg:text-4xl font-black'>
-          At StyleSeat running your business is free
+          At Hairsol running your business is free
         </h1>
         <p className='w-[400px] mt-3'>
           You only pay to process payments and when we send you new clients.

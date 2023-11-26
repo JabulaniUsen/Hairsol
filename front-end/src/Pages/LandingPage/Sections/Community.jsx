@@ -4,9 +4,9 @@ import community from '../../../assets/community.png'
 function Community() {
   return (
     <div className='flex flex-row m-10 my-20 flex-wrap justify-between lg:justify-around items-center'>
-      <div className="two flex flex-row items-center">
+      {/* <div className="two flex flex-row items-center">
         <img src={community} className='w-[500px]' alt="" />
-      </div>
+      </div> */}
 
       <div className="one text-left lg:ml-[-200px]">
         <h1 className='gain-header text-2xl my-7 font-bold'>Hear from our Community</h1>

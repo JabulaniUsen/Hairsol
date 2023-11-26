@@ -21,10 +21,10 @@ const Team = () => {
       about: "Angela is the nail guru who turns manicures and pedicures into works of art. Her meticulous attention to detail and..."
     }
   ];
-
+ 
   return (
-    <div className='m-10 lg:m-40'>
-      <div className="team-header mt-24 flex lg:justify-between items-center flex-wrap">
+    <div className='mx-10 lg:m-40'>
+      <div className="team-header mt-20 flex lg:justify-between items-center flex-wrap">
         <div className="sideOne w-[550px]">
           <h1 className="text-3xl">Meet <span className='text-[#fb7902]'>Our Team</span></h1>
           <p className='leading-7 mt-3 mb-2'>

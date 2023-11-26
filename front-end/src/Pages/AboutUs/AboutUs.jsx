@@ -4,7 +4,8 @@ import Hero from './Sections/Hero'
 import Vision from './Sections/Vision'
 import Mision from './Sections/Mision'
 import Team from './Sections/Team'
-import Footer from '../Homepage/Sections/Footer'
+import Journey from './Sections/Journey'
+import Footer from '../LandingPage/Sections/Footer'
 
 const AboutUs = () => {
   return (
@@ -13,6 +14,7 @@ const AboutUs = () => {
         <Hero />
         <Vision/>
         <Mision/>
+        <Journey/>
         <Team/>
         <Footer/>
     </div>

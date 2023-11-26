@@ -1,32 +1,28 @@
 import React from 'react'
-import misionImg from '../../../assets/mision.png'
+import aboutus from '../icons/aboutus.jpg'
 
 const Mission = () => {
   return (
     <div>
-      <div className="vision-body flex flex-row-reverse items-center justify-center m-auto gap-20 lg:gap-0 flex-wrap my-10">
-        
+      <div className="vision-body flex flex-row-reverse items-center justify-around m-[100px] bg-[#422a3c] h-[450px] py-10">
+
+        <div className="vision-text flex-1 mx-10 p-10">
+          <h3 className='text-white mb-3'>ABOUT US</h3>
+          <h1 className='syne font-bold text-5xl mb-5 text-white'>It’s the bridge between service companies and consumers.</h1>
+          <p className=' text-base text-white '>
+            Hairsol is a Copenhagen-based technology company 
+            known for our overview platform. Our aim is to 
+            simplify and improve everyday life for citizens 
+            in Denmark. One platform that brings together 
+            all services in an easy and controlled environment.
+          </p>
+        </div>
+                
         <div className="img flex-none">
           <img 
-            className='w-[500px] lg:mr-20' 
-            src={misionImg} alt="" 
+            className=' w-[400px] lg:ml-28' 
+            src={aboutus} alt=""  
           />
-        </div>
- 
-        <div className="vision-text flex-1 mx-10 lg:ml-40">
-          <h1 className='font-bold text-2xl mb-12'>Our Vision</h1>
-          <p className=' text-base lg:text-xl lg:w-[90%]'>
-          Lorem ipsum dolor sit amet consectetur. Pellentesque 
-          cursus sit convallis etiam vestibulum magna. Viverra 
-          mi porta aliquam lorem accumsan amet maecenas neque. 
-          Risus nibh nunc integer gravida. Dictum enim magnis 
-          vulputate ornare. Dui morbi feugiat commodo aliquet 
-          diam ultrices in malesuada. Quis imperdiet sagittis 
-          dolor ut gravida tortor in viverra. Eget eu amet 
-          viverra tempus porttitor vitae vitae semper. Molestie 
-          velit at sapien etiam. Ut sit facilisis risus penatibus 
-          egestas tortor vulputate.
-          </p>
         </div>
 
       </div>

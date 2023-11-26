@@ -7,6 +7,7 @@ import Pricing from "./Pages/Pricing/Pricing"
 import Payment from "./Pages/Payment/Payment"
 import Services from "./Pages/Services/Services"
 import Booking from "./Pages/BookingPage/Booking"
+import Login from "./Pages/Register/Login"
 
 function App() {
 
@@ -15,11 +16,12 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route index element={<Services/>} />
-          <Route path="/newclient" element={<LandingPage/>} />
+          <Route path="/howitworks" element={<LandingPage/>} />
           <Route path="/about" element={<AboutUs/>} />
           <Route path="/pricing" element={<Pricing/>} />
           <Route path="/payment" element={<Payment/>} />
           {/* <Route path="/services" element={<Homepage/>}/> */}
+          <Route path="/login" element={<Login/>} />
           <Route path="/booking" element={<Booking/>} />
         </Routes>
       </BrowserRouter>

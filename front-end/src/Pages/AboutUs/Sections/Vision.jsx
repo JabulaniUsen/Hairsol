@@ -1,29 +1,40 @@
 import React from 'react'
-import visionImg from '../../../assets/vision.png'
+import beauty from '../icons/beauty.png'
+import great from '../icons/great.png'
+import gen from '../icons/gen.png'
 
 const Vision = () => {
   return (
-    <div>
-      <div className="vision-body flex flex-row gap-20 items-center justify-center m-auto flex-wrap">
-        <div className="img flex-none">
-          <img 
-            className='w-[450px] lg:ml-10' 
-            src={visionImg} alt="" />
+    <div className='my-5'>
+      <div className="head text-center ">
+        <h4 className='poppins text-[#FB7902] my-2'>OUR VALUES</h4>
+        <h1 className='syne text-4xl font-bold'>The work values we thrive for</h1>
+      </div>
+
+      <div className="body flex flex-col gap-8 justify-center items-center my-20">
+
+        <div className="w-[500px] flex items-center gap-5 border-b-[1px] border-[#D3D3D3] pb-8">
+          <img src={beauty} alt="" />
+          <div className="poppins">
+            <h2 className='font-bold text-xl mb-2'>Beauty Experts</h2>
+            <p className='font-light'>The majority have suffered alteration in some form, buying to injected humour, or randomised words which desktop publishing packages.</p>
+          </div>
         </div>
-        <div className="vision-text flex-1 mx-10 ">
-          <h1 className='font-bold text-2xl mb-12'>Our Vision</h1>
-          <p className=' text-base lg:text-xl lg:w-[70%]'>
-          Lorem ipsum dolor sit amet consectetur. Pellentesque 
-          cursus sit convallis etiam vestibulum magna. Viverra 
-          mi porta aliquam lorem accumsan amet maecenas neque. 
-          Risus nibh nunc integer gravida. Dictum enim magnis 
-          vulputate ornare. Dui morbi feugiat commodo aliquet 
-          diam ultrices in malesuada. Quis imperdiet sagittis 
-          dolor ut gravida tortor in viverra. Eget eu amet 
-          viverra tempus porttitor vitae vitae semper. Molestie 
-          velit at sapien etiam. Ut sit facilisis risus penatibus 
-          egestas tortor vulputate.
-          </p>
+
+        <div className="w-[500px] flex items-center gap-5 border-b-[1px] border-[#D3D3D3] pb-8">
+          <img src={great} alt="" />
+          <div className="poppins">
+            <h2 className='font-bold text-xl mb-2'>Great Services</h2>
+            <p className='font-light'>The majority have suffered alteration in some form, buying to injected humour, or randomised words which desktop publishing packages.</p>
+          </div>
+        </div>
+
+        <div className="w-[500px] flex items-center gap-5 pb-8">
+          <img src={gen} alt="" />
+          <div className="poppins">
+            <h2 className='font-bold text-xl mb-2'>100% Genuine</h2>
+            <p className='font-light'>The majority have suffered alteration in some form, buying to injected humour, or randomised words which desktop publishing packages.</p>
+          </div>
         </div>
       </div>
     </div>

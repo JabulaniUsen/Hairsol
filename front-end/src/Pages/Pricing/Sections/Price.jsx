@@ -135,7 +135,7 @@ function Price() {
                         In-App Messaging
                     </h1>
                     <p className='w-[400px] mt-3'>
-                        Message your clients right on StyleSeat! Chat with
+                        Message your clients right on Hairsol! Chat with
                         new clients and regulars without sharing your personal
                         phone number. Keep all of your conversations in one
                         place — never losing track of a message again!
@@ -157,7 +157,7 @@ function Price() {
                 <div className="one text-left">
                     <h1 className='gain-header text-2xl my-7 font-bold'>Smart Pricing</h1>
                     <p className='gain-text w-[480px]'>
-                        Earn an extra $3K a year on average when you
+                        Earn an extra £3K a year on average when you
                         capitalize on your popular booking times. We use data
                         science to analyze your business, identify your most
                         popular time slots and raise the prices slightly to
