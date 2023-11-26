@@ -1,6 +1,6 @@
 import React from 'react'
 import bag from '../../../assets/bag.png'
-import haven from '../../../assets/haven.png'
+import HavenImage from "../../../assets/haven.png";
 import jewelries from '../../../assets/jewelries.png'
 import salonVideo from '../../../assets/Salon Video.png'
 
@@ -28,7 +28,7 @@ function Featured() {
                 </div>
             </div>
             <div className="bottom-5 left-5 relative">
-                <img src={haven} className=' w-[330px]' alt="" />
+                <img src={HavenImage} className=' w-[330px]' alt="" />
                 <div className="syne absolute bottom-10 left-[45px] shadow-xl bg-[#fffbf2] flex flex-col gap-10 p-10">
                     <p className='text-xl font-bold'>Doris C. Haven</p>
                     <p className='text-[#fb7902] font-bold text-sm'>View Collections</p>
