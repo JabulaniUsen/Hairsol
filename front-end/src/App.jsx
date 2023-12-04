@@ -8,6 +8,7 @@ import Payment from "./Pages/Payment/Payment"
 import Services from "./Pages/Services/Services"
 import Booking from "./Pages/BookingPage/Booking"
 import Login from "./Pages/Register/Login"
+import Signup from "./Pages/Register/Signup"
 
 function App() {
 
@@ -22,6 +23,7 @@ function App() {
           <Route path="/payment" element={<Payment/>} />
           {/* <Route path="/services" element={<Homepage/>}/> */}
           <Route path="/login" element={<Login/>} />
+          <Route path="/signup" element={<Signup/>} />
           <Route path="/booking" element={<Booking/>} />
         </Routes>
       </BrowserRouter>

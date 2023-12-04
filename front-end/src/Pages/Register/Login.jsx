@@ -25,7 +25,7 @@ function Login() {
     <div>
         <Navbar/>
 
-        <div className="flex items-center gap-24 my-10">
+        <div className="flex items-center gap-24 my-10 flex-col lg:flex-row ">
             <div className="img">
                 <img src={ads} alt="" className='cursor-pointer' />
             </div>
@@ -57,7 +57,7 @@ function Login() {
                             className="form-control w-full outline-none mx-2"
                             required
                             />
-                            <FontAwesomeIcon icon={faEye} className={`fas fa-eye ${ showPassword ? 'password-visible' : 'password-hidden' } input-icon cursor-pointer`}
+                            <FontAwesomeIcon icon={faEye} className={` ${ showPassword ? 'password-visible' : 'password-hidden' } input-icon cursor-pointer`}
                             onClick={togglePasswordVisibility} />
                         </div>
                     </div>

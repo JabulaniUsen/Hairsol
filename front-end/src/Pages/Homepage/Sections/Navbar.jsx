@@ -25,7 +25,7 @@ const Navbar = () => {
             </div>
             <div className="account list-none flex row gap-x-4 items-center ">
                 <Link to='/login' className='rounded-xl border-black border-[1px] py-3 px-4'>Log In</Link>
-                <Link to='/homepage' className='rounded-xl bg-black text-white py-3 px-4'>Sign Up</Link>
+                <Link to='/signup' className='rounded-xl bg-black text-white py-3 px-4'>Sign Up</Link>
             </div>
         </div>
     </div>
