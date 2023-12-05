@@ -12,8 +12,10 @@ function Signup() {
     const [address, setAddress] = useState('')
     const [firstname, setFirstname] = useState('')
     const [surname, setSurname] = useState('')
-    const [number, setNumber] = useState('')
+    const [number, setNumber] = useState()
     const [postalcode, setPostalcode] = useState('')
+    const [country, setCountry] = useState('')
+    const [city, setCity] = useState('')
     const [showPassword, setShowPassword] = useState(false);
     
    
@@ -112,8 +114,8 @@ function Signup() {
                                 <input
                                 type="text"
                                 id="text"
-                                value={email}
-                                onChange={(e) => setEmail(e.target.value)}
+                                value={country}
+                                onChange={(e) => setCountry(e.target.value)}
                                 placeholder='Country'
                                 className="form-control w-full outline-none mx-2"
                                 required
@@ -124,9 +126,9 @@ function Signup() {
                             <div className="input-group border-[1px] border-[#c2c2c2]">
                                 <input
                                 type="text"
-                                id="text"
-                                value={email}
-                                onChange={(e) => setEmail(e.target.value)}
+                                id="text" 
+                                value={city}
+                                onChange={(e) => setCity(e.target.value)}
                                 placeholder='City'
                                 className="form-control w-full outline-none mx-2"
                                 required
@@ -140,6 +142,7 @@ function Signup() {
                             type={'text'}
                             id="address"
                             value={address}
+                            placeholder='Address'
                             onChange={(e) => setAddress(e.target.value)}
                             className="form-control w-full outline-none mx-2"
                             required
@@ -153,6 +156,7 @@ function Signup() {
                                 type="number"
                                 id="number"
                                 value={postalcode}
+                                placeholder='Postal Code'
                                 onChange={(e) => setPostalcode(e.target.value)}
                                 className="form-control w-full outline-none mx-2"
                                 required
@@ -166,6 +170,7 @@ function Signup() {
                                 type={'number'}
                                 id="number"
                                 value={number}
+                                placeholder='Mobile'
                                 onChange={(e) => setNumber(e.target.value)}
                                 className="form-control w-full outline-none mx-2"
                                 required
