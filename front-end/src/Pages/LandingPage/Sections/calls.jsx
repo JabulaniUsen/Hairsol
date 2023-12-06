@@ -37,9 +37,9 @@ function Calls() {
       <div className="text-center flex flex-col justify-center my-24">
         <h1 className='call-header text-xl font-bold'>Stop the endless calls, texts and <br /> DMs</h1>
         <p className="call-text w-[400px] lg:w-[500px] m-auto my-5">
-          Send appointment reminders to your clients. No limits. No extra fees (unlike
-          the other guys). We’ll even notify your waitlist when you have last-minute
-          openings.
+          Dispatch appointment reminders to your clients without 
+          restrictions or additional charges (unlike other providers). 
+          We'll even alert your waitlist about last-minute openings.
         </p>
       </div>
 

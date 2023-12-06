@@ -46,14 +46,14 @@ function Gain() {
         variants={fadeDown}
         transition={{ duration }}
       >
-        <h1 className='gain-header text-2xl my-7 font-bold'>Gain New Clients, Create Lasting <br />Connections</h1>
+        <h1 className='gain-header text-2xl my-7 font-bold'>Get New Clients and Build Lasting <br />Relationships</h1>
         <p className='gain-text w-[480px]'>
-          Hairsol promotes your business by investing in TV
-          ads, Google Ads, digital and social media marketing,
-          and more to connect you with quality clients and keep
-          your calendar consistently booked. We ensure your
-          schedule stays full so you can focus on delivering
-          exceptional service.
+          Hairsol enhances your business through investments 
+          in TV ads, Google Ads, digital and social media marketing, 
+          and various channels to link you with high-quality clients, 
+          ensuring a consistently booked calendar. We guarantee a full 
+          schedule, allowing you to concentrate on delivering exceptional 
+          services.
         </p>
         <button className='bg-[#121111] py-3 px-8 my-7 text-sm rounded-md text-white'>Learn More</button>
       </motion.div>

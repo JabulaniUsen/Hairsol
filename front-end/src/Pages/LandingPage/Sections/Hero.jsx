@@ -62,9 +62,9 @@ const Hero = () => {
         transition={{ duration: duration2 }}
       >
         <p className='l-hero-text font-semibold text-2xl lg:text-4xl'>
-          Join the largest network <br />
-          of clients searching for <br />
-          top beauty professionals
+          Become part of the expansive <br /> 
+          community of customers seeking <br /> 
+          highly skilled beauty <br /> professionals.
         </p>
         <Link to='/Login'>
           <button className='bg-[#121111] py-3 px-8 my-7 text-sm rounded-md text-white hover:bg-slate-800'>Get Started</button>
