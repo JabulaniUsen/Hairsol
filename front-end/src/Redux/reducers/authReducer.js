@@ -59,6 +59,7 @@ const authenticationSlice = createSlice({
         state.signingInError = payload;
       });
 
+    
     builder
       .addCase(signUpAction.pending, (state) => {
         state.signUpActionStatus = "loading";
@@ -76,7 +77,7 @@ const authenticationSlice = createSlice({
 
 export const {
   clearLoginStatus,
-//   clearRegisterStatus,
+  clearSignUpStatus,
 //   clearAdminLoginStatus,
 //   clearUserData,
 //   clearSocialSignUpStatus,

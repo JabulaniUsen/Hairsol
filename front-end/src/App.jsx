@@ -5,7 +5,6 @@ import LandingPage from "./Pages/LandingPage/LandingPage"
 import { motion } from 'framer-motion'
 import Pricing from "./Pages/Pricing/Pricing"
 import Payment from "./Pages/Payment/Payment"
-import Services from "./Pages/Services/Services"
 import Booking from "./Pages/BookingPage/Booking"
 import Login from "./Pages/Register/Login"
 import Signup from "./Pages/Register/Signup"
@@ -17,6 +16,8 @@ import store from "./Redux/store"
 import { Provider as ReduxProvider } from "react-redux";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import Home from "./Pages/Services/Home"
+
 
 
 
@@ -28,7 +29,7 @@ function App() {
       <PersistGate persistor={persistor}>
         <BrowserRouter>
           <Routes>
-            <Route index element={<Services/>} />
+            <Route index element={<Home/>} />
             <Route path="/howitworks" element={<LandingPage/>} />
             <Route path="/about" element={<AboutUs/>} />
             <Route path="/pricing" element={<Pricing/>} />

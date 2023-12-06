@@ -3,8 +3,10 @@ import screenOne from '../../../assets/screen1.png';
 import screenTwo from '../../../assets/screen2.png';
 import screenThree from '../../../assets/screen3.png';
 import LoginModal from '../../../Components/LoginModal'
+import Login from '../../Register/Login';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
+import { Link } from 'react-router-dom';
 
 const Hero = () => {
 
@@ -59,15 +61,14 @@ const Hero = () => {
         variants={fadeLeft}
         transition={{ duration: duration2 }}
       >
-        <p className='l-hero-text text-2xl lg:text-4xl'>
+        <p className='l-hero-text font-semibold text-2xl lg:text-4xl'>
           Join the largest network <br />
           of clients searching for <br />
           top beauty professionals
         </p>
-        <button onClick={() => {
-                    setOpenModal(true)
-                }} 
-                className='bg-[#121111] py-3 px-8 my-7 text-sm rounded-md text-white hover:bg-slate-800'>Get Started</button>
+        <Link to='/Login'>
+          <button className='bg-[#121111] py-3 px-8 my-7 text-sm rounded-md text-white hover:bg-slate-800'>Get Started</button>
+        </Link>
       </motion.div>
 
       <motion.div
@@ -82,7 +83,6 @@ const Hero = () => {
         <img src={screenTwo} className='z-[20] w-[130px] lg:w-[180px]' alt="" />
         <img src={screenThree} className='ml-[-45px] w-[150px] lg:w-[210px]' alt="" />
       </motion.div>
-      {openModal && <LoginModal closeModal={() => setOpenModal(false)} />}
     </div>
   );
 };

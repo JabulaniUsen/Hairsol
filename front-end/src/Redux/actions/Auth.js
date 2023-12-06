@@ -27,7 +27,7 @@ export const signInAction = createAsyncThunk(
     SIGN_UP,
     async (args, { rejectWithValue }) => {
       try {
-        const response = await axiosClient().post("users/signup/", args);
+        const response = await axiosClient().post("users/register/", args);
   
         console.log(response.data, "kkkkk");
         // setToken(response.data.token_key);

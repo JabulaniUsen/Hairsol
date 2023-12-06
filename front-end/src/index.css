@@ -15,11 +15,11 @@
 .call-header,
 .call-text,
 .gain-header,
-.l-hero-text,
 .omor,
 .p-text {
     font-family: 'Space Grotesk', sans-serif;
 }
+.l-hero-text,
 .poppins {
     font-family: 'Poppins' sans-serif;
 }
@@ -125,3 +125,17 @@
    .password-hidden {
     color: #e5e7eb;
    }
+
+.responsive-nav{
+    top: 0;
+    width: 100%;
+    padding: 10px;
+    background: #fff;
+    position: absolute;
+    left: 0;
+    z-index: 2;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

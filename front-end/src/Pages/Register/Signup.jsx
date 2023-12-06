@@ -5,6 +5,11 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBuilding, faCoffee, faEnvelope, faLock, faPhone, faTruck, faUser } from '@fortawesome/free-solid-svg-icons';
 import { faEye } from '@fortawesome/free-solid-svg-icons';
 
+import { useDispatch, useSelector } from "react-redux";
+import { signUpAction } from '../../Redux/actions/Auth';
+import { toast } from "react-toastify";
+import { clearSignUpStatus } from '../../Redux/reducers/authReducer';
+
 function Signup() {
 
     const [email, setEmail] = useState('');
@@ -17,23 +22,96 @@ function Signup() {
     const [country, setCountry] = useState('')
     const [city, setCity] = useState('')
     const [showPassword, setShowPassword] = useState(false);
+    const [isPasswordValid, setIsPasswordValid] = useState(false);
+    const [errorMsg, setErrorMsg] = useState('');
+    const [successMessage, setSuccessMessage] = useState(false);
+   
+    const handleChange = (e) => {
+        const inputPassword = e.target.value;
+        const isValid = validatePassword(inputPassword);
     
+        setPassword(inputPassword);
+        setIsPasswordValid(isValid);
+    
+        if (!isValid) {
+          setErrorMsg('Password must contain at least one uppercase letter');
+        } else {
+          setErrorMsg('');
+        }
+     };
+
+
+    const validatePassword = (password) => {
+       const regex = /(?=.*[A-Z])/;
+       return regex.test(password);
+    };
    
     const togglePasswordVisibility = () => {
        setShowPassword(!showPassword);
     };
 
+    const dispatch = useDispatch();
+    const authSelector = useSelector((state) => state.authenticationSlice);
+    // console.log(authSelector);
+
+    useEffect(() => {
+        if (authSelector.signingUpStatus == "loading") {
+          setIsloading(true);
+          return;
+        }
+      }, [authSelector.signingUpStatus]);
+    
+      useEffect(() => {
+        if (authSelector.signingUpStatus == "completed") {
+            setSuccessMessage(true);
+            setTimeout(() => {
+              window.location.href = 'https://github.com/JabulaniUsen';
+            }, 3000);
+            return;
+          }
+        // dispatch(clearLoginStatus());
+      }, [authSelector.signingUpStatus]);// dispatch(clearLoginStatus
+    
+      useEffect(() => {
+        if (authSelector.signingUpStatus == "failed") {
+            toast.error(`${authSelector.signingUpError}`);
+          setIsloading(false);
+          return;
+        }
+        dispatch(clearSignUpStatus());
+      }, [authSelector.signingUpStatus]);
+
+
+    const handleSignUp = (values) => {
+            setSuccessMessage(true);
+            setTimeout(() => {
+              window.location.href = 'https://github.com/JabulaniUsen';
+            }, 2000);
+        dispatch(signUpAction({
+            email:email,
+            password:password,
+            address:address,
+            firstname:firstname,
+            surname:surname,
+            number:number,
+            postalcode:postalcode,
+            country:country,
+            city:city,
+        }));
+      };
+
+
+
   return (
     <div>
         <Navbar/>
-
-        <div className="flex items-center flex-col lg:flex-row gap-24 my-10">
+        <div className="flex items-center flex-col lg:flex-row  gap-24 my-10">
             <div className="img">
                 <img src={ads} alt="" className='cursor-pointer' />
             </div>
             <div className="form lg:w-[700px] m-auto mx-5">
                 <h1 className='text-2xl font-bold text-center border-b-[1px] mb-2 p-4'>I'M A CUSTOMER ALREADY!</h1>
-                <form  className='flex flex-col gap-6'>
+                <div  className='flex flex-col gap-6'>
                 <div className="">
                 <p className='my-1 poppins font-semibold text-xl py-3 border-b-[1px] border-[#c2c2c2]'>Required Field</p>
                     <div className="flex items-end gap-3 my-4">
@@ -91,7 +169,8 @@ function Signup() {
                                 type={showPassword ? 'text' : 'password'}
                                 id="password"
                                 value={password}
-                                onChange={(e) => setPassword(e.target.value)}
+                                onInput={(e) => setPassword(e.target.value)}
+                                onChange={handleChange}
                                 className="form-control w-full outline-none mx-2"
                                 placeholder='Password'
                                 required
@@ -99,6 +178,7 @@ function Signup() {
                                 <FontAwesomeIcon icon={faEye} className={` ${ showPassword ? 'password-visible' : 'password-hidden' } input-icon cursor-pointer`}
                                 onClick={togglePasswordVisibility} />
                             </div>
+                            {errorMsg && <p style={{ color: 'red', position: 'absolute' }}>{errorMsg}</p>}
                         </div>
                     </div>
                 </div>
@@ -171,7 +251,7 @@ function Signup() {
                                 id="number"
                                 value={number}
                                 placeholder='Mobile'
-                                onChange={(e) => setNumber(e.target.value)}
+                                onInput={(e) => setNumber(e.target.value)}
                                 className="form-control w-full outline-none mx-2"
                                 required
                                 />
@@ -185,10 +265,12 @@ function Signup() {
                     </div>
                 </div>
 
-                <button type="submit" className="submit-btn bg-black">
-                    Submit
+                <button onClick={handleSignUp} disabled={!isPasswordValid} className="submit-btn bg-black">
+                        Submit
                 </button>
-                </form>
+                {successMessage && <p className='text-left text-green-600 mt-5 text-xl font-bold'>Account created successfully. Redirecting to the app</p>}          
+
+                </div>
             </div>
         </div>
 
@@ -197,3 +279,11 @@ function Signup() {
 }
 
 export default Signup
+
+
+
+
+
+
+
+

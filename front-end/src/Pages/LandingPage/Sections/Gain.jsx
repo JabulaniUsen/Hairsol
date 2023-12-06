@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import gain from '../../../assets/gain.png';
+import gain from '../../../assets/gain.jpg';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 
@@ -36,7 +36,7 @@ function Gain() {
         variants={fadeUp}
         transition={{ duration }}
       >
-        <img src={gain} alt="" />
+        <img src={gain} alt="" className='w-[350px]' />
       </motion.div>
 
       <motion.div

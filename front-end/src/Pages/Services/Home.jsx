@@ -10,7 +10,7 @@ import Stories from './Sections/Stories'
 import Footer from '../LandingPage/Sections/Footer'
 
 
-function Services() {
+function Home() {
   return (
     <div>
         <Navbar/>
@@ -25,4 +25,4 @@ function Services() {
   )
 }
 
-export default Services
+export default Home

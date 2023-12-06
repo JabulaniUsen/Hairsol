@@ -9,8 +9,6 @@ import { signInAction } from '../../Redux/actions/Auth'
 import { toast } from "react-toastify";
 import { clearLoginStatus } from '../../Redux/reducers/authReducer';
 
-
-
 function Login() {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');

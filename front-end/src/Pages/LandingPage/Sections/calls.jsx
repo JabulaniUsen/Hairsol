@@ -69,12 +69,6 @@ function Calls() {
           </h1>
         </motion.div>
       </div>
-
-      <div className="circles flex flex-row gap-1 justify-center items-center">
-        <p className='bg-[#222222] px-2 text-white rounded-full'>1</p>
-        <p className='bg-[#a7a7a7] px-2 text-white rounded-full'>2</p>
-        <p className='bg-[#a7a7a7] px-2 text-white rounded-full'>3</p>
-      </div>
     </div>
   );
 }
