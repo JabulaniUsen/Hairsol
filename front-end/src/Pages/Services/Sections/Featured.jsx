@@ -28,7 +28,7 @@ function Featured() {
                 </div>
             </div>
             <div className="bottom-5 left-5 relative">
-                <img src={HavenImage} className=' lg:w-[330px] w-[320px]' alt="" />
+                {/* <img src={HavenImage} className=' lg:w-[330px] w-[320px]' alt="" /> */}
                 <div className="syne absolute bottom-10 left-[45px] shadow-xl bg-[#fffbf2] flex flex-col gap-10 p-10">
                     <p className='text-xl font-bold'>Doris C. Haven</p>
                     <p className='text-[#fb7902] font-bold text-sm'>View Collections</p>
